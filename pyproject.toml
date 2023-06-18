@@ -1,0 +1,13 @@
+[project]
+name = "c3vd"
+version = "0.0.1"
+
+dependencies=[
+    "nerfstudio>=0.3.1"
+]
+
+[tool.setuptools.packages.find]
+include = ["c3vd*"]
+
+[project.entry-points.'nerfstudio.dataparser_configs']
+c3vd-data = 'c3vd.c3vd_config:c3vd_data'
